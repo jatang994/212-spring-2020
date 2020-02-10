@@ -103,7 +103,7 @@ class DynamicArray {
 #endif
 ```
 
-Some functions have already been implemented for you inside of the `.cpp` file. The rest of the functions are up to you to implement. You may add your own _private_ functions should you wish.
+Some functions have already been implemented for you inside of the `DynamicArray.cpp` file. The rest of the functions are up to you to implement, specifically where you see `// TODO` comments. You may add your own _private_ functions should you wish.
 
 >Note: You are _not_ allowed to alter any of the given private variables, public function signatures or implementations.
 
