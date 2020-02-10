@@ -11,7 +11,9 @@
 
 5.	Select an installation folder. The default on Windows is `C:\Qt` You can change this directory if you want just make sure you remember where you installed Qt.
 
-6.	There may be a screen about component selection with a title "Select Components". This is the screen where the worst mistakes for installing Qt are made. There is a list of Qt versions and each version has several "kits" which are the compilers. <span style="color:red"> WARNING! Do NOT check all of a Qt versions or the select all button or else you will end up with a 100+ gigabyte installation of pointless versions! </span> Click the arrow and expand the "Qt 5.14.1" version. If you are on Windows 10 check the `MinGW 7.3.0 64bit` version. If you are not on Windows choose a `gcc` compiler that is 64bit. Below is what screen you should see.
+6.	There may be a screen about component selection with a title "Select Components". This is the screen where the worst mistakes for installing Qt are made. There is a list of Qt versions and each version has several "kits" which are the compilers. 
+> WARNING! Do NOT check all of a Qt versions or the select all button or else you will end up with a 100+ gigabyte installation of pointless versions!
+Click the arrow and expand the "Qt 5.14.1" version. If you are on Windows 10 check the `MinGW 7.3.0 64bit` version. If you are not on Windows choose a `gcc` compiler that is 64bit. Below is what screen you should see.
 
 ![Qt Windows Version](figures/windows_correct_version.png)
 
