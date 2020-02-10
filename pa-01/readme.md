@@ -27,7 +27,7 @@ The goal of this assignment is to implement your own Dynamic Array Class in C++.
 
 ### Code Handout
 -----
-In order to implement your own class, we are providing starter code (both files can be found inside the `gui/` folder). You will be given a *header file* (`.cpp`) and a partially-implemented *source file* (`.cpp`) for a class `DynamicArray`.
+In order to implement your own class, we are providing starter code (both files can be found inside the `gui/` folder). You will be given a *header file* (`DynamicArray.h`) and a partially-implemented *source file* (`DynamicArray.cpp`) for a class `DynamicArray`.
 
 ```C++
 #ifndef DYNAMIC_ARRAY_H
