@@ -1,4 +1,4 @@
-## Programming Assignment 01 (2/18)
+## Programming Assignment 01 (due 2/18)
 
 This assignment is focused on _Dynamic Arrays_ (resizable arrays). The assignment is worth a total of 100 points. If you have any questions or need any help, please visit us during office hours and/or post questions on Piazza.
 
