@@ -71,7 +71,7 @@ In the above code snippet, we have created the parameters 'int size' and 'int *p
 void printArray(int size, int *ptr){
     
     for (int i = 0; i < size ; i++){
-        int value = (*ptr + i);
+        int value = *(ptr + i);
         std::cout << value << " ";
     }
     std::cout << std::endl;
