@@ -27,6 +27,7 @@ public:
     void removeAt(int index);
     void removeFirstOf(double value);
     double get(int index);
+    void print();
 };
 
 #endif // LINKEDLIST_H

@@ -1,4 +1,5 @@
 #include "LinkedList.h"
+#include <iostream>
 
 //construct an empty list
 LinkedList::LinkedList()
@@ -36,6 +37,21 @@ void LinkedList::append(double value)
     }
 }
 
+void LinkedList::prepend(double value)
+{
+
+}
+
+void LinkedList::insert(int index, double value)
+{
+
+}
+
+void LinkedList::removeFirst()
+{
+
+}
+
 void LinkedList::removeLast()
 {
     if (count > 0) //if the list is not empty remove last item otherwise do nothing
@@ -62,5 +78,40 @@ void LinkedList::removeLast()
             delete tail;
             tail = previous;
         }
+    }
+}
+
+void LinkedList::removeAt(int index)
+{
+
+}
+
+void LinkedList::removeFirstOf(double value)
+{
+
+}
+
+double LinkedList::get(int index)
+{
+
+}
+
+void LinkedList::print()
+{
+    if (count == 0)
+        std::cout << "{}" << std::endl;
+    else
+    {
+        Node* current = head;
+        std::cout << "{";
+        while (current != nullptr)
+        {
+            std::cout << current->data;
+            if (current != tail)
+                std::cout << ", ";
+            current = current->next;
+
+        }
+        std::cout << "}" << std::endl;
     }
 }
