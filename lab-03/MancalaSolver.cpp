@@ -22,18 +22,7 @@ int MancalaSolver::removeByIndex(unsigned int idx)
 
 void MancalaSolver::append(int idx, int num_pieces)
 {
-    //students are going to implement this. I implemented it so I can test my code.
-
-    Pit* pit = new Pit(idx, num_pieces);
-
-    if (head == nullptr && tail == nullptr) //empty list case
-        head = tail = pit;
-    else //add to end of the list
-    {
-        tail->next = pit;
-        tail = pit;
-    }
-    n_elem++;
+    
 }
 
 int MancalaSolver::solve(int idx)
