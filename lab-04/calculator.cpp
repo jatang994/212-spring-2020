@@ -19,7 +19,7 @@ std::stack<std::string> fillStack(){
   std::getline(std::cin,input);
 
   for(int i = 0 ; i <= input.size() ; i++ ){
-    if (input[i] != ' '){
+    if (input[i] != ' ' && input[i] != '\0'){
       if (isdigit(input[i])){
         int j = i;
         std::string number;
