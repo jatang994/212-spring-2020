@@ -131,7 +131,7 @@ Our TA Chris has taken some time to create a graphical component for this projec
 
 You should fully test your implementation with your own `main.cpp` driver as described above. Once you are confident in your solution, the graphical interface is just another way to verify the correctness of your solution (more details on this in the next section). If you want to have an idea of how the GUI should look with a correct implementation of `DoublyLinkedList`, watch the video linked below.
 
-[![](figures/pa-02_thumbnail.jpg)](https://www.youtube.com/watch?v=oX2YIFodpGk&feature=youtu.be)
+[![](figures//pa-02_thumbnail.jpg)](https://www.youtube.com/watch?v=oX2YIFodpGk&feature=youtu.be)
 
 ### GUI Usage
 ----
