@@ -12,7 +12,7 @@ Lists are one of the most common and versatile data structures and are essential
 -----
 Circular Doubly Linked Lists are a particular type of linked list where each node holds a pointer to the next, as well as the previous, node in the list. The 'previous' node of the `head` of the list, is the `tail` and the 'next' node of the `tail` node, is the `head`.
 
-![CDLL](CDLL.png)
+![CDLL](figures/CDLL.png)
 
 The goal of this assignment is to implement your own Circular Doubly Linked List Class in C++. This linked list data structure for this assignment will store characters instead of integers.
 
