@@ -1,0 +1,3 @@
+# Qt garbage files that do not belong on github
+*build-*Desktop*
+*.pro.user

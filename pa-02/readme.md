@@ -156,6 +156,6 @@ Write and test each function _thoroughly_ before moving on to the next one to en
 
 ### Submission and Grading
 ---
-To submit your solution to Gradescope, simply select `DoublyLinkedList.cpp` and `DoublyLinkedList.h` then use the *drag and drop* option. You will not receive immediate feedback so test your code locally first.
+When you go to submit to gradescope you will see two assignments `section 1` and `section 2`, you should submit your assignment under the submission corresponding to your lab section. (ie. if you are in the 10:00-11:45 AM section, submit to `section 1`, if you are in the 12:00-1:45 PM section, submit to `section 2`). If you and your partner are from different lab sections, submit under `section 1`. Please make sure to submit to the correct section, or you may lose points. To submit your solution to Gradescope, simply select `DoublyLinkedList.cpp` and `DoublyLinkedList.h` then use the *drag and drop* option. You will not receive immediate feedback so test your code locally first.
 
 > You must be reminded that students caught cheating or plagiarizing will receive `no credit`. Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
