@@ -36,9 +36,9 @@ We have defined some wrapper functionality for you, so what is to follow will be
 #### Steps
 Any function with a `steps` parameter should treat steps as being how deep the recursion will go. For example, drawing a grid recursively with steps = 1 should produce 4 squares. Steps = 2 should produce a grid with 16 squares etc. Here are some images of the gui we have showing steps = 1, steps = 2 and steps = 3 respectively:
 
-<img src="images/Capture.png"  width="400px">
-<img src="images/Capture2.png" width="400px">
-<img src="images/Capture3.png" width="400px">
+<img src="images/Capture.PNG"  width="400px">
+<img src="images/Capture2.PNG" width="400px">
+<img src="images/Capture3.PNG" width="400px">
 
 #### drawLine Functions
 We have defined a few draw line functions for you (so you dont have to try and figure out QT gui aspects today). There are two of these functions: 
