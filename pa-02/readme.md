@@ -127,7 +127,7 @@ There is _no_ autograder for this assignment. This means that you will not recei
 
 ### GUI Component
 -----
-Our TA Chris has taken some time to create a graphical component for this project using [Qt Creator](https://www.qt.io/product) (environment and libraries for UI development). This will allow you to visualize your code once you have it working. Please follow the [instructions to install Qt Creator](./qt.md) on your computer if you have not already done so.
+Our TA Chris has taken some time to create a graphical component for this project using [Qt Creator](https://www.qt.io/product) (environment and libraries for UI development). This will allow you to visualize your code once you have it working. Please follow the [instructions to install Qt Creator](../pa-01/qt.md) on your computer if you have not already done so.
 
 You should fully test your implementation with your own `main.cpp` driver as described above. Once you are confident in your solution, the graphical interface is just another way to verify the correctness of your solution (more details on this in the next section). If you want to have an idea of how the GUI should look with a correct implementation of `DoublyLinkedList`, watch the video linked below.
 
