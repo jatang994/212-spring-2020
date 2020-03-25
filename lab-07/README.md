@@ -47,11 +47,11 @@ This will run three randomized tests on the chosen function using arrays of your
 >**Important Note:** You *must* compile with the C++ 11 Standard in order for the starter code to work.
 Example of how to compile: 
 ```
-g++ lab8.cpp -std=c++11 -o lab8
+g++ lab7.cpp -std=c++11 -o lab7
 ```
 Example of how to run the program:
 ```
-./lab8 merge_sort 10
+./lab7 merge_sort 10
 ```
 
 ## 3. MergeSort
@@ -238,6 +238,6 @@ There is **no separate test for** `partition()`, so you may want to take advanta
 
 ## 5. Submission
 
-Your submission for this lab will include the `lab8.cpp` file containing your implementations of `merge()`, `merge_sort()`, `merge_sort_plus()`, `partition()` and `quicksort()`, along with a `lab8.txt` file containing your answers to the questions.
+Your submission for this lab will include the `lab7.cpp` file containing your implementations of `merge()`, `merge_sort()`, `merge_sort_plus()`, `partition()` and `quicksort()`, along with a `lab7.txt` file containing your answers to the questions.
 
-* If your group was not able to successfully implement every function, you should submit the `lab8.cpp` file containing everything you were able to implement. Ideally, the source code file you submit should be able to compile. 
+* If your group was not able to successfully implement every function, you should submit the `lab7.cpp` file containing everything you were able to implement. Ideally, the source code file you submit should be able to compile. 
