@@ -9,7 +9,7 @@ int* gen_list_unsorted(int, int, int);
 void merge(int* A, int n, int mid) {
 
     /* Implement merge here */
-
+    
 }
 
 void merge_sort(int* A, int n) {
@@ -176,7 +176,7 @@ int main(int argc, char** argv) {
         std::cerr << "Invalid Arguments. Usage: test_type(str) input_size(int)" << std::endl;
         return 1;
     }
-    int num_ttypes = 4;
+    int num_ttypes = 5;
     char test_types[5][16] = {"merge", "merge_sort", "merge_sort_plus", "quicksort", "custom"};
     int test_idx = -1;
     for (int i = 0; i < num_ttypes; i++) {
