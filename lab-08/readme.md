@@ -80,7 +80,7 @@ Note that when you use `emplace` or `insert` with a key that is *already in the 
 
 ## 5.0 Task for Today
 
-You will be working with a database containing information on cases of COVID-19. The goal of this task is to read through the provided text file, insert each unique country into a set and then insert key-value pairs of states/provinces and their associated **confirmed** COVID-19 cases into a map. States/provinces will be the key, and confirmed cases will be the value. If a line of of the text file **does not** have an associated state/province, then **use** the country as the key.
+You will be working with a database compiled and maintained by John Hopkins University containing information on cases of COVID-19 (The full database can be found here https://github.com/CSSEGISandData/COVID-19). The goal of this task is to read through the provided text file, insert each unique country into a set and then insert key-value pairs of states/provinces and their associated **confirmed** COVID-19 cases into a map. States/provinces will be the key, and confirmed cases will be the value. If a line of of the text file **does not** have an associated state/province, then **use** the country as the key.
 
 The data base is comma-separated; the first column of data is the state/province where the COVID-19 cases are occurring. The second column of data is the country and the current confirmed cases of COVID-19 will be the final column of data. Every row has a country name and the same number of commas, but not every row has a state/province.
 
