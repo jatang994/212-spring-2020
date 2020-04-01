@@ -59,7 +59,7 @@ int main(){
         std::cout << "A state/province was added to the the countries set." << std::endl;
         return 1;
     }
-    if (inSet(countries, "Diamond Princess")){
+    if (inSet(countries, "Mayotte")){
         std::cout << "Test Case 1: Failed" << std::endl;
         std::cout << "A state/province was added to the the countries set." << std::endl;
         return 1;
