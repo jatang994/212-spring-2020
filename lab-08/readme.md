@@ -78,7 +78,7 @@ int main() {
 ```
 Note that when you use `emplace` or `insert` with a key that is *already in the map*, the value will **not** be replaced.
 
-## 5.0 Task for Today
+## 5. Task for Today
 
 You will be working with a database compiled and maintained by John Hopkins University containing information on cases of COVID-19 (The full database can be found here https://github.com/CSSEGISandData/COVID-19). The goal of this task is to read through the provided text file, insert each unique country into a set and then insert key-value pairs of states/provinces and their associated **confirmed** COVID-19 cases into a map. States/provinces will be the key, and confirmed cases will be the value. If a line of of the text file **does not** have an associated state/province, then **use** the country as the key.
 
