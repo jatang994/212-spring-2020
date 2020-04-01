@@ -1,7 +1,7 @@
 # Lab 8 - Sets and Maps
 
 ## 1. Introduction
-In this lab we will be looking into how to store data read from text files into sets and maps, both of which can be thought of as using binary search trees in their implementations. We will be manipulating classes from the STL (Standard Template Library) such as <fstream>, <set> and <map>. The goal of this lab will be to become familiar with use cases of set and map, their operations and to understand the underlying data structures that make them tick.
+In this lab we will be looking into how to store data read from text files into sets and maps, both of which can be thought of as using binary search trees in their implementations. We will be manipulating classes from the STL (Standard Template Library) such as fstream, set and map. The goal of this lab will be to become familiar with use cases of set and map, their operations and to understand the underlying data structures that make them tick.
 
 
 ## 2. Reading from Files
