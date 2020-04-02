@@ -1,4 +1,4 @@
-## Programming Assignment 3
+## Programming Assignment 3 (due 4/16)
 
 This assignment is to be completed by teams of 1 or 2 students.  The assignment is worth a total of **115 points**.  If you have any questions, visit us during office hours and/or post those questions on Piazza using the appropriate folder tag.
 
