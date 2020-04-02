@@ -84,7 +84,7 @@ class Board {
         // b: an initial board configuration
         // the board is just a vector that contains a sequence of numbers in row-major order 
         (including the zero element)
-        // m: an initial number of moves
+        // m: a number of moves
         // type: distance to be used 'm' for manhattan and 'b' for hamming
         Board(const std::vector<int> &b, unsigned int m, char type);
         // destructor
@@ -111,7 +111,7 @@ class Board {
 
 In `main.cpp` you will implement the A* algorithm:
 
->- `solve`, given an initial array of values, and a distance type, it runs a solver (35 points).  This function **must** print to the standard output one of the following messages: `Unsolvable board` if the board given is not solvable, or `Number of moves: n` where `n` is the minimum number of moves required to get to the goal board.
+>- `solve`, given an initial vector of values, and a distance type, it runs a solver (35 points).  This function **must** print to the standard output one of the following messages: `Unsolvable board` if the board given is not solvable, or `Number of moves: n` where `n` is the minimum number of moves required to get to the goal board.
 
 ```c++
 #include "board.h"
