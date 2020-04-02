@@ -75,18 +75,18 @@ You will implement a class `Board` representing a search node (game state).  The
 class Board {
     private:
         // TODO
-        // define your data members and private methods here
+        // define your own data members and private methods here
 
     public:
         // default constructor (for creating an empty board)
         Board();
         // full constructor
         // b: an initial board configuration
-        // the board is just a sequence of numbers in row-major order (including the zero element)
-        // n: number of elements in the board (including 0, for a 3x3 board n should be 9)
+        // the board is just a vector that contains a sequence of numbers in row-major order 
+        (including the zero element)
         // m: an initial number of moves
         // type: distance to be used 'm' for manhattan and 'b' for hamming
-        Board(unsigned int *b, unsigned int n, unsigned int m, char type);
+        Board(const std::vector<int> &b, unsigned int m, char type);
         // destructor
         ~Board();
 
@@ -95,7 +95,7 @@ class Board {
         // verifies whether the board is a goal board
         bool is_goal();
         // returns in neigh a list of neighbors for this node
-        void neighbors(std::vector<Board *> *neigh, char type);
+        void neighbors(std::vector<Board> &neigh, char type);
         // gets the number of moves made so far (up to this node)
         unsigned int get_n_moves();
         // returns the hamming distance to the goal
@@ -118,13 +118,12 @@ In `main.cpp` you will implement the A* algorithm:
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
-// this is the main solver
+// this is the signature for the solver
 // -----------------------------------------------------------------------
 // b: an initial board configuration
 // the board is just a sequence of numbers in row-major order (including the zero element)
-// n: number of elements in the board (including 0)
 // type: distance to be used 'm' for manhattan and 'b' for hamming
-void solve(unsigned int *b, unsigned int n, char type) {
+void solve(const std::vector<int> &b, char type) {
     // TODO
 }
 
