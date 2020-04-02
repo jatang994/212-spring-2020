@@ -2,7 +2,7 @@
 
 This assignment is to be completed by teams of 1 or 2 students.  The assignment is worth a total of **115 points**.  If you have any questions, visit us during office hours and/or post those questions on Piazza using the appropriate folder tag.
 
-> The introductory portion (including all figures) of this writeup is based off the writeup for a COS 226 class assignment at Princeton University [link](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html).
+> Credit: the introductory portion (including all figures) of this writeup is based off the writeup for a COS 226 class assignment at Princeton University ([link](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html)).
 
 ### Square Puzzles
 -----
