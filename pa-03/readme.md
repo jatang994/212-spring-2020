@@ -1,14 +1,14 @@
 ## Programming Assignment 3
 
-> This assignment was originally developed for the COS 226 class of Princeton University.  The introductory portion (including all figures) of this writeup is based off the writeup for the Princeton's [version](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html).
+> This assignment was originally developed in the COS 226 class of Princeton University.  The introductory portion (including all figures) of this writeup is based off the writeup for the Princeton's [version](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html).
 
-This assignment is to be completed individually.  You are NOT allowed to share your source code with anybody else.  The assignment is worth a total of $$115$$ points.  If you have any questions, visit us during office hours and/or post those questions on Piazza using the appropriate folder tag.
+This assignment is to be completed by teams of 1 or 2 students.  The assignment is worth a total of 115 points.  If you have any questions, visit us during office hours and/or post those questions on Piazza using the appropriate folder tag.
 
 ### Square Puzzles
 
-The goal of the assignment is to write a program to solve the [N-puzzle](http://en.wikipedia.org/wiki/Fifteen_puzzle) problem using the A* search algorithm.  The N-puzzle is a sliding puzzle that is played on a square grid with $$N$$ square tiles labeled 1 through $$N$$, plus a blank square (represented as zero).  The goal is to rearrange the tiles so that they are in row-major order, using *as few moves as possible*.  Tiles are permitted to slide either horizontally or vertically into the blank square.  The following diagram shows a sequence of moves from an initial board (left) to the goal board (right) on a 8-puzzle.
+The goal of the assignment is to write a program to solve the [N-puzzle](http://en.wikipedia.org/wiki/Fifteen_puzzle) problem using the A* search algorithm.  The N-puzzle is a sliding puzzle that is played on a square grid with `N` square tiles labeled 1 through `N`, plus a blank square (represented as zero).  The goal is to rearrange the tiles so that they are in row-major order, using *as few moves as possible*.  Tiles are permitted to slide either horizontally or vertically into the blank square.  The following diagram shows a sequence of moves from an initial board (left) to the goal board (right) on a 8-puzzle.
 
-![8-puzzle](files/pa-4moves.png){:height="140px"}
+<img src="./pa-4moves.png" width="140">
 
 #### Detecting Unsolvable Boards
 
