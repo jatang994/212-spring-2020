@@ -1,28 +1,28 @@
 ## Programming Assignment 3
 
-> This assignment was originally developed in the COS 226 class of Princeton University.  The introductory portion (including all figures) of this writeup is based off the writeup for the Princeton's [version](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html).
+This assignment is to be completed by teams of 1 or 2 students.  The assignment is worth a total of **115 points**.  If you have any questions, visit us during office hours and/or post those questions on Piazza using the appropriate folder tag.
 
-This assignment is to be completed by teams of 1 or 2 students.  The assignment is worth a total of 115 points.  If you have any questions, visit us during office hours and/or post those questions on Piazza using the appropriate folder tag.
+> The introductory portion (including all figures) of this writeup is based off the writeup for a COS 226 class assignment at Princeton University [link](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html).
 
 ### Square Puzzles
 
 The goal of the assignment is to write a program to solve the [N-puzzle](http://en.wikipedia.org/wiki/Fifteen_puzzle) problem using the A* search algorithm.  The N-puzzle is a sliding puzzle that is played on a square grid with `N` square tiles labeled 1 through `N`, plus a blank square (represented as zero).  The goal is to rearrange the tiles so that they are in row-major order, using *as few moves as possible*.  Tiles are permitted to slide either horizontally or vertically into the blank square.  The following diagram shows a sequence of moves from an initial board (left) to the goal board (right) on a 8-puzzle.
 
-<img src="./pa-4moves.png" width="140">
+<img src="./pa-4moves.png" height="140">
 
 #### Detecting Unsolvable Boards
 
 Not all initial boards can lead to the goal board by a sequence of moves, including these two:
 
-![8-puzzle](files/pa-unsolvable.png){:height="140px"}
+<img src="./pa-unsolvable.png" height="140">
 
-Remarkably, we can determine whether a board is solvable without solving it!  To do so, we count inversions.  An **inversion** is any pair of tiles $$i$$ and $$j$$ where $$i < j$$ but $$i$$ appears after $$j$$ when considering the board in row-major order (row 0, followed by row 1, and so forth).
+Remarkably, we can determine whether a board is solvable without solving it!  To do so, we count inversions.  An **inversion** is any pair of tiles `i` and `j` where `i < j` but `i` appears after `j` when considering the board in row-major order (row 0, followed by row 1, and so forth).
 
-![8-puzzle](files/pa-inversions.png){:height="160px"}
+<img src="./pa-inversions.png" height="160">
 
 In order to determine whether a board is solvable we can:
-- First, consider the case when the board size is an odd integer.  When $$l=\sqrt{N+1}$$ is odd, an l-by-l board is solvable if and only if its number of inversions is even.
-- Second, when $$l$$ is even, an l-by-l board is solvable if and only if the number of inversions plus the row of the blank square is odd (rows start at index 0).
+- First, consider the case when the board size is an odd integer.  When `l=sqrt(N+1)` is odd, an l-by-l board is solvable if and only if its number of inversions is even.
+- Second, when `l` is even, an l-by-l board is solvable if and only if the number of inversions plus the row of the blank square is odd (rows start at index 0).
 
 #### Hamming and Manhattan Distances
 
@@ -30,7 +30,7 @@ To measure how close a board is to the goal board (solution), we define two noti
 - the *Hamming distance* between a board and the goal board is the number of tiles in the wrong position
 - the *Manhattan distance* between a board and the goal board is the sum of the Manhattan distances (sum of the vertical and horizontal distance) from the tiles to their goal positions.
 
-![8-puzzle](files/pa-hamming-manhattan.png){:height="160px"}
+<img src="./pa-hamming-manhattan.png" height="160">
 
 #### A* Algorithm
 
