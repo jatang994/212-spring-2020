@@ -1,4 +1,4 @@
-## Programming Assignment 4
+## Programming Assignment 3
 
 > This assignment was originally developed for the COS 226 class of Princeton University.  The introductory portion (including all figures) of this writeup is based off the writeup for the Princeton's [version](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html).
 
