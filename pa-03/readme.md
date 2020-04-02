@@ -5,7 +5,7 @@ This assignment is to be completed by teams of 1 or 2 students.  The assignment 
 > The introductory portion (including all figures) of this writeup is based off the writeup for a COS 226 class assignment at Princeton University [link](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/index.html).
 
 ### Square Puzzles
-
+-----
 The goal of the assignment is to write a program to solve the [N-puzzle](http://en.wikipedia.org/wiki/Fifteen_puzzle) problem using the A* search algorithm.  The N-puzzle is a sliding puzzle that is played on a square grid with `N` square tiles labeled 1 through `N`, plus a blank square (represented as zero).  The goal is to rearrange the tiles so that they are in row-major order, using *as few moves as possible*.  Tiles are permitted to slide either horizontally or vertically into the blank square.  The following diagram shows a sequence of moves from an initial board (left) to the goal board (right) on a 8-puzzle.
 
 <img src="./pa-4moves.png" height="140">
@@ -32,13 +32,13 @@ To measure how close a board is to the goal board (solution), we define two noti
 
 <img src="./pa-hamming-manhattan.png" height="160">
 
-#### A* Algorithm
-
+### A* Algorithm
+-----
 A* search is a general artificial intelligence algorithm.  It requires the definition of a *search node*, which is composed by a current board and the number of moves made to reach the board.
 
 First, insert the initial search node (the initial board, 0 moves) into a priority queue (a *priority score/function* needs to be defined).  Then, delete from the priority queue the search node with the minimum priority, and insert onto the priority queue all neighboring search nodes (those that can be reached in one move from the dequeued search node).  Repeat this procedure until the search node dequeued corresponds to the goal board.
 
-> To reduce unnecessary exploration of useless search nodes, when considering the neighbors of a search node, do not enqueue a neighbor if it has previously been enqueued.  We can enforce this by keeping a set (hashtable) of boards that have been explored already.
+> To reduce unnecessary exploration of useless search nodes, when considering the neighbors of a search node, do not enqueue a neighbor if it has previously been enqueued.  We can enforce this by keeping **a set of boards** that have been explored already.
 
 The efficacy of this approach hinges on the choice of *priority function* for a search node. We consider two priority functions:
 
@@ -47,20 +47,19 @@ The efficacy of this approach hinges on the choice of *priority function* for a 
 
 To solve the puzzle from a given search node on the priority queue, the total number of moves we need to make (including those already made) is at least its priority, using either the Hamming or Manhattan priority function.  Consequently, when the goal board is dequeued, we have discovered not only a sequence of moves from the initial board to the goal board, but one that makes the fewest moves.
 
-#### Game Tree
-
+### Game Tree
+-----
 One way to view the computation is as a game tree, where each search node is a node in the game tree and the children of a node correspond to its neighboring search nodes.  The root of the game tree is the initial search node; the internal nodes have already been processed; the leaf nodes are maintained in a priority queue; at each step, the A* algorithm removes the node with the smallest priority from the priority queue and processes it (by adding its children to both the game tree and the priority queue).  For example, the following diagram illustrates the game tree after each of the first three steps of running the A* search algorithm on a 3-by-3 puzzle using the Manhattan priority function.
 
-![8-puzzle](files/pa-game-tree.png){:height="340px"}
+<img src="./pa-game-tree.png" height="340">
 
 ### What to implement?
+-----
 
->- 5 points will be awarded for coding style/comments.
-
-You will implement a class `Board` representing a search node (game state).  The class `Board` must be implemented in `board.h` and `board.cc`.  Your class must contain **at least** the following public methods:
+You will implement a class `Board` representing a search node (game state).  The class `Board` must be implemented in `board.h` and `board.cpp`.  Your class must contain **at least** the following public methods:
 
 >- `get_n_moves`, returns the number of moves for this board (5 points)
->- `hamming`, returns the hamming distance to the goal board (10 points)
+>- `hamming`, returns the hamming distance to the goal board (15 points)
 >- `manhattan`, returns the manhattan distance to the goal board (15 points)
 >- `inversions`, returns the number of inversions for the board (10 points)
 >- `is_solvable`, returns whether this board is solvable (5 points)
@@ -110,9 +109,9 @@ class Board {
 #endif
 ```
 
-In `main.cc` you will implement the A* algorithm:
+In `main.cpp` you will implement the A* algorithm:
 
->- `solve`, given an initial array of values, and a distance type, it runs a solver (35 points).  This function **must** print to the standard output one of the following messages: `Unsolvable board` if the board given is not solvable, or `Number of moves: n` where $$n$$ is the minimum number of moves required to get to the goal board.
+>- `solve`, given an initial array of values, and a distance type, it runs a solver (35 points).  This function **must** print to the standard output one of the following messages: `Unsolvable board` if the board given is not solvable, or `Number of moves: n` where `n` is the minimum number of moves required to get to the goal board.
 
 ```c++
 #include "board.h"
@@ -141,22 +140,19 @@ int main(int argc, char **argv) {
 ```
 
 ### How to run the Program?
-
+-----
 We should be able to run your program with:
 
 ```bash
 $ ./prog h < filename.txt
 ```
 
-The program expects one command line argument.  The argument is a single character (either 'h' for hamming or 'm' for manhattan) that indicates which priority function to use.  Additionally, the program expects an initial board to be provided in the stdin.  In the example above `filename.txt` corresponds to a single text file that contains an initial board configuration.
+The program expects one command line argument.  The argument is a single character (either `'h'` for hamming or `'m'` for manhattan) that indicates which priority function to use.  Additionally, the program expects an initial board to be provided using the `stdin`.  In the example above `filename.txt` corresponds to a single text file that contains an initial board configuration.
 
 Download [this](http://www.cs.princeton.edu/courses/archive/fall17/cos226/assignments/8puzzle/8puzzle.zip) archive if you want access to a large list of sample puzzles.
 
-
 ### Submission and Grading
-
-You will submit **only** three files, named `board.h`, `board.cc`, and `main.cc`, to Gradescope.
-
-You are required to use comments in all your functions and use proper coding style and indentation, otherwise points will be deducted.  Questions will be automatically graded.
+-----
+You will submit **only** three files, named `board.h`, `board.cpp`, and `main.cpp`, to Gradescope.  Questions will be automatically graded.  You are required to use comments in all your functions and use proper coding style and indentation.  
 
 > You must be advised that students caught cheating or plagiarizing will receive `no credit`.  Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
