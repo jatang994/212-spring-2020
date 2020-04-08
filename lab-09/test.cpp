@@ -56,7 +56,7 @@ TEST_CASE("Preorder") {
     SUBCASE("Empty Tree") {
         BSTree t;
         std::ostringstream oss;
-        t.postorder(oss);
+        t.preorder(oss);
         REQUIRE(oss.str() == "\n");
     }
     SUBCASE("Imbalanced") {
@@ -64,8 +64,8 @@ TEST_CASE("Preorder") {
         std::ostringstream oss;
         t.insert(1);
         t.insert(2);
-        t.postorder(oss);
-        REQUIRE(oss.str() == "2, 1, \n");
+        t.preorder(oss);
+        REQUIRE(oss.str() == "1, 2, \n");
     }
     SUBCASE("Balanced") {
         BSTree t;
@@ -78,8 +78,8 @@ TEST_CASE("Preorder") {
         t.insert(6);
         t.insert(8);
 
-        t.postorder(oss);
-        REQUIRE(oss.str() == "2, 4, 3, 6, 8, 7, 5, \n");
+        t.preorder(oss);
+        REQUIRE(oss.str() == "5, 3, 2, 4, 7, 6, 8, \n");
     }
 }
 
