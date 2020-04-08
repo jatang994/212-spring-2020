@@ -138,6 +138,8 @@ Again, create two methods named `height()`, one private and one public.
 The public method should take no parameters, call the private method on the root, and return the resulting integer representing the height of the tree. 
 The private method should take a `BSTNode *` parameter and return an integer representing the height of the subtree rooted at the node passed in.
 
+> Note: Calling the height method on an empty tree should return -1 as a tree with one node is of height 0. This is meant to distinguish between the two.
+
 #### Traversals
 
 Here you will need six methods in total:
