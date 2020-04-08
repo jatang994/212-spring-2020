@@ -1,6 +1,5 @@
 # Lab 9: Binary Search Trees 
 
-TODO: Come up with a more creative lab name
 
 ## 1. Introduction
 
