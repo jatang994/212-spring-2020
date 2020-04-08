@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "bst_ref.h"
+#include "bst.h"
 #include <iostream>
 
 TEST_CASE("Constructor") {
