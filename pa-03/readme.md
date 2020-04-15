@@ -82,8 +82,7 @@ class Board {
         Board();
         // full constructor
         // b: an initial board configuration
-        // the board is just a vector that contains a sequence of numbers in row-major order 
-        (including the zero element)
+        // the board is just a vector that contains a sequence of numbers in row-major order (including the zero element)
         // m: a number of moves
         // type: distance to be used 'm' for manhattan and 'b' for hamming
         Board(const std::vector<int> &b, unsigned int m, char type);
