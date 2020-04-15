@@ -1,6 +1,6 @@
-lab-12: lab-12.o
-	./lab-12.o
-	rm lab-12.o
+lab-10: lab-10.o
+	./lab-10.o
+	rm lab-10.o
 
-lab-12.o: lab-12.cpp
-	g++ -std=c++11 lab-12.cpp -o lab-12.o
+lab-10.o: lab-10.cpp
+	g++ -std=c++11 lab-10.cpp -o lab-10.o
